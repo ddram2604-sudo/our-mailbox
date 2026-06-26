@@ -5,7 +5,37 @@
 </head>
 
 <body>
+
   <h1>Mailbox</h1>
-  <p>It works.</p>
+  <p>Letters waiting to be opened.</p>
+  <p><em>A Love Project</em></p>
+
+  <p>Letters to Arthur from your Cindy</p>
+
+  <button onclick="toggleMail()">Open Mail</button>
+
+  <div id="mail" style="display:none; margin-top:20px;">
+    <h3>📩 Letters</h3>
+
+    <ul>
+      <li>Letter 1</li>
+      <li>Letter 2</li>
+      <li>Letter 3</li>
+    </ul>
+
+  </div>
+
+  <script>
+    function toggleMail() {
+      const mail = document.getElementById("mail");
+
+      if (mail.style.display === "none") {
+        mail.style.display = "block";
+      } else {
+        mail.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
