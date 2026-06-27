@@ -1,41 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mailbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mailbox</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Mailbox</h1>
-  <p>Letters waiting to be opened.</p>
-  <p><em>A Love Project</em></p>
+    <main class="container">
 
-  <p>Letters to Arthur from your Cindy</p>
+        <h1>Our Mailbox</h1>
 
-  <button onclick="toggleMail()">Open Mail</button>
+        <p class="subtitle">
+            Letters to Arthur
+        </p>
 
-  <div id="mail" style="display:none; margin-top:20px;">
-    <h3>📩 Letters</h3>
+        <p class="signature">
+            From your Cindy
+        </p>
 
-    <ul>
-      <li>Letter 1</li>
-      <li>Letter 2</li>
-      <li>Letter 3</li>
-    </ul>
+        <button>
+            Open Up
+        </button>
 
-  </div>
-
-  <script>
-    function toggleMail() {
-      const mail = document.getElementById("mail");
-
-      if (mail.style.display === "none") {
-        mail.style.display = "block";
-      } else {
-        mail.style.display = "none";
-      }
-    }
-  </script>
+    </main>
 
 </body>
 </html>
