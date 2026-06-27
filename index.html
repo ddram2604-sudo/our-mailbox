@@ -18,7 +18,7 @@
     <p>Letters to Arthur</p>
     <p>From your Cindy</p>
 
-    <button>Open Up</button>
+    <button onclick="openMailbox()">Open Up</button>
 <div id="letters" style="display:none;">
     <h2>Locked Letters 💌</h2>
 
@@ -26,5 +26,10 @@
     <div class="letter">✉ Letter 2</div>
     <div class="letter">✉ Letter 3</div>
 </div>
+    <script>
+function openMailbox() {
+    document.getElementById("letters").style.display = "block";
+}
+</script>
 </body>
 </html>
