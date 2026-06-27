@@ -1,3 +1,4 @@
 function openMailbox() {
-    document.getElementById("letters").style.display = "block";
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("mailbox").style.display = "block";
 }
