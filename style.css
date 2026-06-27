@@ -1,19 +1,49 @@
 body {
     margin: 0;
-    background: #F7CBD3;
-}
+    background-color: #EFEBCE;
+    font-family: 'Cormorant Garamond', serif;
+    color: #3b2f2f;
 
-.container {
+    /* centers everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
     text-align: center;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-/* No styling beyond structure */
+/* Title */
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
-h1, p, button {
-    margin: 10px 0;
+/* Sub text */
+p {
+    font-size: 18px;
+    margin: 4px;
+    opacity: 0.8;
+}
+
+/* Button */
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3b2f2f;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
