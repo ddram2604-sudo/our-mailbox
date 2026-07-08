@@ -1,2 +1,3 @@
-console.log("Hello from script.js!");
-alert("It works!");
+const openButton = document.getElementById("openButton");
+
+console.log(openButton);
