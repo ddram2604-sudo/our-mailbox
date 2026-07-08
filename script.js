@@ -1,1 +1,2 @@
-alert("JavaScript is working!");
+console.log("Hello from script.js!");
+alert("It works!");
