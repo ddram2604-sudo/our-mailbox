@@ -1,4 +1,11 @@
-function openMailbox() {
-    document.getElementById("welcome").style.display = "none";
-    document.getElementById("mailbox").style.display = "block";
-}
+const openButton = document.getElementById("openButton");
+
+openButton.addEventListener("click", () => {
+
+    document.body.classList.add("fade-out");
+
+    setTimeout(() => {
+        window.location.href = "mailbox.html";
+    }, 500);
+
+});
