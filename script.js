@@ -1,3 +1,3 @@
-const openButton = document.getElementById("openButton");
-
-console.log(openButton);
+document.getElementById("openButton").addEventListener("click", function () {
+    window.location.href = "mailbox.html";
+});
