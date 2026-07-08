@@ -56,3 +56,11 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
+
+body {
+    transition: opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
