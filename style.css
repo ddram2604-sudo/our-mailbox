@@ -35,13 +35,24 @@ button {
     width: 170px;
     height: 50px;
 
-    border-radius: 30px;
-    border: 2px solid #5a4058;
+    border: none;
+    border-radius: 999px;
 
-    background-color: #e5bdd8;
+    background-color: #E5B7D3;
 
     font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
+    font-size: 22px;
 
     cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
 }
