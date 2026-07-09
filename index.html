@@ -5,29 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Mailbox</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-</head>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>Our Mailbox</h1>
+    <img src="images/butterfly-left.png" class="butterfly left">
+    <img src="images/butterfly-right.png" class="butterfly right">
 
-        <p>
-            Letters to Arthur<br>
-            From your Cindy
-        </p>
+    <h1>Our Mailbox</h1>
 
-        <button id="openButton">
-            Open up
+    <p class="subtitle">
+        Letters to Arthur
+        <br><br>
+        From your Cindy
+    </p>
+
+    <h2>OPEN WHEN YOU'RE :</h2>
+
+    <div class="grid">
+
+        <button class="envelope" data-letter="hug">
+            <img src="images/envelope.png">
+            <span>needing a hug</span>
+        </button>
+
+        <button class="envelope" data-letter="sleep">
+            <img src="images/envelope.png">
+            <span>struggling to sleep</span>
+        </button>
+
+        <button class="envelope" data-letter="moon">
+            <img src="images/envelope.png">
+            <span>looking at the moon</span>
         </button>
 
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<!-- Popup -->
+
+<div id="popup">
+
+    <div class="paper">
+
+        <button id="close">✕</button>
+
+        <h3 id="letterTitle"></h3>
+
+        <p id="letterText"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
